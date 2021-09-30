@@ -1,0 +1,31 @@
+.ua-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+
+.header {
+  text-align: center;
+}
+
+.table-header {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 40px;
+}
