@@ -17,8 +17,9 @@
   <meta charset="utf-8">
 </head>
 <body>
-
-<img src="images/ua.png" class="ua-img"></img>
+<div class="center">
+  <img src="images/ua.png" class="ua-img" />
+</div>
 
 <h1 class="header">Історія змін даних</h1>
 <h3 class="header">Таблиця [=tableName]</h3>
