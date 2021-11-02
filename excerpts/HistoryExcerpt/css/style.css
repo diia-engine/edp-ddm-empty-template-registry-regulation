@@ -12,6 +12,11 @@
 
 .table-header {
   font-size: 16px;
+  background-color: #e0e0e0;
+}
+
+.sysinfo-row {
+  background-color: #f4f4f4;
 }
 
 h1 {
@@ -26,7 +31,13 @@ table {
   width: 100%;
   table-layout: fixed;
   word-wrap: break-word;
-  text-align: center;
   font-size: 10px;
   margin-bottom: 40px;
+  border-collapse: collapse;
+  text-align: left;
+  text-indent: 5px;
+}
+
+table, tr, th, td {
+  border: solid 1px #929292;
 }

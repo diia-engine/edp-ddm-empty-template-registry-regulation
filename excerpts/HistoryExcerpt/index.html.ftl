@@ -22,14 +22,14 @@
 </div>
 
 <h1 class="header">Історія змін даних</h1>
-<h3 class="header">Таблиця [=tableName]</h3>
-<h3 class="header">Запис [=entityId]</h3>
+<h3 class="header">Таблиця: [=tableName]</h3>
+<h3 class="header">Запис: [=entityId]</h3>
 [#assign currentPrintIndex=0]
 [#list 0.. as _]
   [#if currentPrintIndex >= data.excerptRows?size]
     [#break]
   [/#if]
-  <table align="center">
+  <table>
     <tr class="table-header">
       <th>Поля</th>
       <th colspan="3">Зміни</th>
@@ -48,55 +48,55 @@
       [/#list]
     </tr>
     [/#list]
-    <tr>
+    <tr class="sysinfo-row">
       <th>Автор</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(data.excerptRows[i].ddmInfo.createdBy)!]</td>
       [/#list]
     </tr>
-    <tr>
+    <tr class="sysinfo-row">
       <th>Код операції</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(operationMap[(data.excerptRows[i].ddmInfo.dmlOp)!])!]</td>
       [/#list]
     </tr>
-    <tr>
+    <tr class="sysinfo-row">
       <th>Ім'я системи</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(data.excerptRows[i].ddmInfo.systemId)!]</td>
       [/#list]
     </tr>
-    <tr>
+    <tr class="sysinfo-row">
       <th>Ім'я додатку</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(data.excerptRows[i].ddmInfo.applicationId)!]</td>
       [/#list]
     </tr>
-    <tr>
+    <tr class="sysinfo-row">
       <th>Ідентифікатор бізнес процесу</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(data.excerptRows[i].ddmInfo.businessProcessId)!]</td>
       [/#list]
     </tr>
-    <tr>
+    <tr class="sysinfo-row">
       <th>Назва кроку в бізнес процесі</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(data.excerptRows[i].ddmInfo.businessActivity)!]</td>
       [/#list]
     </tr>
-    <tr>
+    <tr class="sysinfo-row">
       <th>Ім'я підписанта</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(data.excerptRows[i].userInfo.fullName)!]</td>
       [/#list]
     </tr>
-    <tr>
+    <tr class="sysinfo-row">
       <th>ДРФО підписанта</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(data.excerptRows[i].userInfo.drfo)!]</td>
       [/#list]
     </tr>
-    <tr>
+    <tr class="sysinfo-row">
       <th>ЄДРПОУ підписанта</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
         <td>[=(data.excerptRows[i].userInfo.edrpou)!]</td>
