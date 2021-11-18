@@ -63,13 +63,13 @@
     <tr class="sysinfo-row">
       <th>Ім'я системи</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
-        <td>[=(data.excerptRows[i].ddmInfo.systemId)!]</td>
+        <td>[=(data.excerptRows[i].ddmInfo.system)!]</td>
       [/#list]
     </tr>
     <tr class="sysinfo-row">
       <th>Ім'я додатку</th>
       [#list currentPrintIndex..currentPrintIndex+2 as i]
-        <td>[=(data.excerptRows[i].ddmInfo.applicationId)!]</td>
+        <td>[=(data.excerptRows[i].ddmInfo.application)!]</td>
       [/#list]
     </tr>
     <tr class="sysinfo-row">
