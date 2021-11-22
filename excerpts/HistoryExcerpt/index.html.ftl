@@ -22,8 +22,8 @@
 </div>
 
 <h1 class="header">Історія змін даних</h1>
-<h3 class="header">Таблиця: [=tableName]</h3>
-<h3 class="header">Запис: [=entityId]</h3>
+<h3 class="header"><b>Таблиця:</b> [=tableName]</h3>
+<h3 class="header"><b>Запис:</b> [=entityId]</h3>
 [#assign currentPrintIndex=0]
 [#list 0.. as _]
   [#if currentPrintIndex >= data.excerptRows?size]
